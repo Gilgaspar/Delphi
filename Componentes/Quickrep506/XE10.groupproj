@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7E47DE21-6BC1-4B1F-A8F6-0A89483F611F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="QR506RunDXE10.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="QR506DesignDXE10.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="QR506RunDXE10">
+        <MSBuild Projects="QR506RunDXE10.dproj"/>
+    </Target>
+    <Target Name="QR506RunDXE10:Clean">
+        <MSBuild Projects="QR506RunDXE10.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="QR506RunDXE10:Make">
+        <MSBuild Projects="QR506RunDXE10.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="QR506DesignDXE10">
+        <MSBuild Projects="QR506DesignDXE10.dproj"/>
+    </Target>
+    <Target Name="QR506DesignDXE10:Clean">
+        <MSBuild Projects="QR506DesignDXE10.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="QR506DesignDXE10:Make">
+        <MSBuild Projects="QR506DesignDXE10.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="QR506RunDXE10;QR506DesignDXE10"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="QR506RunDXE10:Clean;QR506DesignDXE10:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="QR506RunDXE10:Make;QR506DesignDXE10:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
