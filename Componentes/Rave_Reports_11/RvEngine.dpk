@@ -1,0 +1,32 @@
+{*************************************************************************}
+{ Rave Reports version 11.0                                               }
+{ Copyright (c), 1995-2017, Nevrona Designs, all rights reserved          }
+{*************************************************************************}
+
+package RvEngine;
+
+{$DESCRIPTION 'Rave Language Engine'}
+{$IMPLICITBUILD OFF}
+{$RUNONLY}
+{$LIBSUFFIX '110'}
+
+requires
+  RvCore,
+  RvBarcode,
+  RvGraphics,
+  RvStandard,
+  RvReport;
+
+contains
+  RvLEDefine,
+  RvLEUtil,
+  RvLEType,
+  RvLEID,
+  RvLEModule,
+  RvLERun,
+  RvLEExpr,
+  RvLECode,
+  RvLEDebug,
+  RvLESystem;
+
+end.

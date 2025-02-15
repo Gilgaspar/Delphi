@@ -1,0 +1,17 @@
+package ND_JPEG;
+
+{$DESCRIPTION 'Rave JPEG Component'}
+{$IMPLICITBUILD OFF}
+{$RUNONLY}
+{$LIBSUFFIX '110'}
+
+{$R *.res}
+
+requires
+  RvCore,
+  RvStandard;
+
+contains
+  NDCsJPEG;
+
+end.

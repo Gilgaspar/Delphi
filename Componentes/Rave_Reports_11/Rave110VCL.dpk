@@ -1,0 +1,119 @@
+{*************************************************************************}
+{ Rave Reports version 11.0                                               }
+{ Copyright (c), 1995-2017, Nevrona Designs, all rights reserved          }
+{*************************************************************************}
+
+package Rave110VCL;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Rave Reports 11.0 Run-Time Package (VCL)'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  VCL,
+  BDERTL,
+  DBRTL,
+  vclimg;
+
+contains
+  RpDefine,
+  RpDevice,
+  RpFont,
+  RpBase,
+  RpFiler,
+  RpSystem,
+  RpMemo,
+  RpBars,
+  RpDBUtil,
+  RpFormPreview,
+  RpFormStatus,
+  RpFormSetup,
+  RpRPTF,
+  RpCon,
+  RpConDS,
+  RpConBDE,
+  RpRender,
+  RpRenderCanvas,
+  RpRenderPreview,
+  RpRenderPrinter,
+  RpRenderHTML,
+  RpRenderPDF,
+  RpRenderRTF,
+  RpRenderText,
+  RpMBCS,
+  RpRave,
+  RvDefine,
+  RvUtil,
+  RvClass,
+  RvData,
+  RvDataField,
+  RvDatabase,
+  RvDirectDataView,
+  RvDataLink,
+  RvDLBase,
+  RvDLCommon,
+  RvDriverDataView,
+  RvLEModule,
+  RvLERun,
+  RvLEDebug,
+  RvLEExpr,
+  RvLECode,
+  RvLEID,
+  RvLEType,
+  RvLEUtil,
+  RvLEDefine,
+  RvLESystem,
+  RvLDCompiler,
+  RvProj,
+  RvSecurity,
+  RvCmHuff,
+  RvCsStd,
+  RvCsBars,
+  RvCsDraw,
+  RvCsRpt,
+  RvCsData,
+  RpDBTabl,
+  RpHTFilr,
+  RpLabel,
+  Rprinter,
+  RpRTFilr,
+  RpSect,
+  RpShell,
+  RpTable,
+  RpTXFilr,
+  RpCanvas,
+  RpFPrint,
+  Rpreview,
+  RpRender_HTML,
+  RpRender_PDF,
+  RpRenderBitmap,
+  RpRenderMetafile,
+  RpRenderJPEG;
+
+end.
+

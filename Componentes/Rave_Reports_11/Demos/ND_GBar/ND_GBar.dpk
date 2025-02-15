@@ -1,0 +1,16 @@
+package ND_GBar;
+
+{$DESCRIPTION 'Rave Greenbar Component'}
+{$IMPLICITBUILD OFF}
+{$RUNONLY}
+{$LIBSUFFIX '110'}
+
+{$R *.res}
+
+requires
+  RvCore;
+
+contains
+  NDCsGBar;
+
+end.

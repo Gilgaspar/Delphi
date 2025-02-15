@@ -1,0 +1,21 @@
+{*************************************************************************}
+{ Rave Reports version 11.0                                               }
+{ Copyright (c), 1995-2017, Nevrona Designs, all rights reserved          }
+{*************************************************************************}
+
+package RvGraphics;
+
+{$DESCRIPTION 'Rave Graphics Components'}
+{$IMPLICITBUILD OFF}
+{$RUNONLY}
+{$LIBSUFFIX '110'}
+
+{$R RvCsDraw.res}
+
+requires
+  RvCore;
+
+contains
+  RvCsDraw;
+
+end.

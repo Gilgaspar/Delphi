@@ -1,0 +1,87 @@
+{*************************************************************************}
+{ Rave Reports version 11.0                                               }
+{ Copyright (c), 1995-2017, Nevrona Designs, all rights reserved          }
+{*************************************************************************}
+
+package RvCore;
+
+{$R *.res}
+{$R 'RvClass.res'}
+{$R 'RvProj.res'}
+{$R 'RvData.res'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Rave Class Library'}
+{$LIBSUFFIX '110'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  VCL,
+  VCLIMG,
+  VCLDB;
+
+contains
+  RpDefine,
+  RpFont,
+  RpDevice,
+  RpBase,
+  RpFiler,
+  RpSystem,
+  RpMemo,
+  RpBars,
+  RpFormPreview,
+  RpFormStatus,
+  RpFormSetup,
+  RpRPTF,
+  RpCon,
+  RpRender,
+  RpRenderCanvas,
+  RpRenderPreview,
+  RpRenderPrinter,
+  RpRenderHTML,
+  RpRenderPDF,
+  RpRenderText,
+  RpRenderRTF,
+  RvDefine,
+  RvUtil,
+  RvClass,
+  RvData,
+  RvDatabase,
+  RvDataField,
+  RvDirectDataView,
+  RvDriverDataView,
+  RvDLBase,
+  RvDLCommon,
+  RpMBCS,
+  RvDataLink,
+  RvSecurity,
+  RvProj,
+  RvTool,
+  RvToolUtil,
+  RvToolEvents,
+  RvCmHuff;
+
+end.

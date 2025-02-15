@@ -1,0 +1,26 @@
+{*************************************************************************}
+{ Rave Reports version 11.0                                               }
+{ Copyright (c), 1995-2017, Nevrona Designs, all rights reserved          }
+{*************************************************************************}
+
+package dclRave;
+
+{$I RpVer.inc}
+{$DESCRIPTION 'Rave Reports 11.0 BEX Package'}
+{$IMPLICITBUILD OFF}
+{$DESIGNONLY ON}
+
+requires
+  VCL, VCLX, 
+  {$IFDEF Level2009}VCLIMG,{$ELSE}VCLJPG,{$ENDIF}
+  {$IFNDEF CPUX64} DesignIDE, {$IFNDEF LevelXE7}BDERTL,{$ENDIF}{$ENDIF} 
+  DBRTL, Rave110VCL;
+
+contains
+  RpAddFrm,
+  RpCEdFrm,
+  RpSecFrm,
+  RpExeFrm,
+  RaveReg;
+
+end.

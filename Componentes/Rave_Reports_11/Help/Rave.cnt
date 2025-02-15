@@ -1,0 +1,303 @@
+:TITLE Rave Reports
+:BASE Rave.hlp
+1 Contents=Contents@Rave.hlp
+1 Rave
+2 Welcome=Welcome@Rave.hlp
+2 Introduction
+3 Introduction=Introduction@Rave.hlp
+3 RAVE=RAVE@Rave.hlp
+3 First Glance=FirstGlance@Rave.hlp
+3 Navigation Area=NavigationArea@Rave.hlp
+3 The Page (Foundation of Rave)=ThePage(FoundationofRave)@Rave.hlp
+3 Project Tree Panel=ProjectTreePanel@Rave.hlp
+3 Property Panel=PropertyPanel@Rave.hlp
+2 Editors
+3 Anchor Editor=Anchor_Editor@Rave.hlp
+3 Band Style Editor=Band_Style_Editor@Rave.hlp
+3 Color Palette=Color_Palette@Rave.hlp
+3 DataText Editor=DataText_Editor@Rave.hlp
+3 Font Editor=Font_Editor@Rave.hlp
+2 Main Screen
+3 Main Screen=Main_Screen@Rave.hlp
+3 Property Panel=Property_Panel@Rave.hlp
+3 Project Tree Panel
+4 Project Tree Panel=Project_Tree_Panel@Rave.hlp
+4 Report Library=ProjectTree_ReportLibrary@Rave.hlp
+4 Global Page Catalog=ProjectTree_GlobalPage@Rave.hlp
+4 DataView Dictionary=ProjectTree_DataView@Rave.hlp
+4 Naming Components=ProjectTree_NamingComponents@Rave.hlp
+2 Generating Output
+3 Generating Output=GeneratingOutput@Rave.hlp
+3 Executing Reports=ExecutingReports@Rave.hlp
+3 Preferences Dialog=PreferencesDialog@Rave.hlp
+3 Report Preview=Report_Preview@Rave.hlp
+3 Sending to Printer=SendToPrinter@Rave.hlp
+3 NDR and PRN files=NDRandPRNfiles@Rave.hlp
+3 HTML .=HTML@Rave.hlp
+3 PDF .=PDF@Rave.hlp
+2 Preferences
+3 Environment Preferences=Environment_Preferences@Rave.hlp
+3 Designer Preferences=Designer_Preferences@Rave.hlp
+3 Default Preferences=Default_Preferences@Rave.hlp
+3 Printing Preferences=Printing_Preferences@Rave.hlp
+3 Shortcuts Preferences=Shortcuts_Preferences@Rave.hlp
+2 Wizards
+3 Wizards=Wizards@Rave.hlp
+3 Simple Wizard=SimpleWizard@Rave.hlp
+3 Master Detail Wizard=MasterDetailWizard@Rave.hlp
+3 Report Expert=ReportExpertWizard@Rave.hlp
+2 Event Scripting
+3 Event Scripting=EventScripting@Rave.hlp
+3 Event Editor=EventEditor@Rave.hlp
+3 Syntax=EventSyntax@Rave.hlp
+3 Functions=EventFunctions@Rave.hlp
+3 Events=Events@Rave.hlp
+3 Classes=EventClasses@Rave.hlp
+3 Example GreenBar Effect=EventExampleGreenBarEffect@Rave.hlp
+3 Example Parameters=EventExampleParameters@Rave.hlp
+3 Example OnBeforePrint=EventExampleOnBeforePrint@Rave.hlp
+3 Example OnGetText=EventExampleOnGetText@Rave.hlp
+3 Example Section OnPrint=EventExampleSection@Rave.hlp
+1 Rave Components
+2 Components=Components@Rave.hlp
+2 Toolbar=Toolbar@Rave.hlp
+2 DataField Types=DataField_Types@Rave.hlp
+2 Toolbars
+3 Alignment Toolbar=Alignment_Toolbar@Rave.hlp
+3 Colors Toolbar=Colors_Toolbar@Rave.hlp
+3 Designer Toolbar=Designer_Toolbar@Rave.hlp
+3 Fonts Toolbar=Fonts_Toolbar@Rave.hlp
+3 Lines Toolbar=Lines_Toolbar@Rave.hlp
+3 Project Toolbar=Project_Toolbar@Rave.hlp
+3 Zoom Toolbar=Zoom_Toolbar@Rave.hlp
+2 BarCode Components
+3 BarCode Components=BarCodeComponent@Rave.hlp
+3 BarCode Components=BarCode_Components@Rave.hlp
+3 PostNetBarCode=PostNetBarCode@Rave.hlp
+3 I2of5BarCode=I2of5BarCode@Rave.hlp
+3 Code39BarCode=Code39BarCode@Rave.hlp
+3 Code128BarCode=Code128BarCode@Rave.hlp
+3 UPCBarCode=UPCBarCode@Rave.hlp
+3 EANBarCode=EANBarCode@Rave.hlp
+2 Drawing Components
+3 Drawing Components=Drawing_Components@Rave.hlp
+3 Circle Component=Circle_Component@Rave.hlp
+3 Ellipse Component=Class_TRaveEllipse@Rave.hlp
+3 Rectangle Component=Rectangle_Component@Rave.hlp
+3 Square Component=Square_Component@Rave.hlp
+2 Project Components
+3 Project Components=ProjectComponents@Rave.hlp
+3 DataView Component=DataView_Component@Rave.hlp
+3 Page Component=Page_Component@Rave.hlp
+3 ProjectManager Component=ProjectManager_Component@Rave.hlp
+3 Report Component=Report_Component@Rave.hlp
+2 Report Components
+3 Report Components=Report_Components@Rave.hlp
+3 Band Component=Band_Component@Rave.hlp
+3 CalcController Component=CalcController_Component@Rave.hlp
+3 CalcOp Component=CalcOp_Component@Rave.hlp
+3 CalcText Component=CalcText_Component@Rave.hlp
+3 CalcTotal Component=CalcTotal_Component@Rave.hlp
+3 DataBand Component=DataBand_Component@Rave.hlp
+3 DataCycle Component=DataCycle_Component@Rave.hlp
+3 DataMemo Component=DataMemo_Component@Rave.hlp
+3 DataMirrorSection Component=DataMirrorSection_Component@Rave.hlp
+3 DataText Component=DataText_Component@Rave.hlp
+3 Region Component=Region_Component@Rave.hlp
+2 Standard Components
+3 Standard Components=Standard_Components@Rave.hlp
+3 Bitmap Component=Bitmap@Rave.hlp
+3 FontMaster Component=FontMaster_Component@Rave.hlp
+3 Memo Component=Memo_Component@Rave.hlp
+3 MetaFile Component=MetaFile_Component@Rave.hlp
+3 PageNumInit Component=PageNumInit_Component@Rave.hlp
+3 Section Component=Section_Component@Rave.hlp
+3 Text Component=Text_Component@Rave.hlp
+1 Adaptable Reports
+2 Adaptable Reports=AdaptableReports@Rave.hlp
+2 Anchors=Anchors@Rave.hlp
+2 Waste Fit=WasteFitMore@Rave.hlp
+1 Batch and Chain Reporting
+2 Batch and Chain Reporting=BatchandChainReporting@Rave.hlp
+2 Batch Pages=BatchPages@Rave.hlp
+2 Calling Pages
+3 Calling Pages=CallingPages@Rave.hlp
+3 Calling Pages Lesson=Lesson_CallingPages@Rave.hlp
+2 Chain Pages
+3 Chain Pages=ChainPages@Rave.hlp
+3 Chain Pages Lesson=Lesson_ChainPages@Rave.hlp
+2 Different First Page format
+3 Different First Page format=DifferentFirstPageformat@Rave.hlp
+3 Different First Page Lesson=Lesson_DifferentFirstPage@Rave.hlp
+2 Different Odd/Even Page format
+3 Different Odd/Even Page format=DifferentOddEvenPageformat@Rave.hlp
+3 Different Odd/Even Page Lesson=Lesson_DifferentOddEvenPage@Rave.hlp
+1 Property Descriptions
+2 Property Descriptions=PropertyDescriptions@Rave.hlp
+2 AllowSplit property=AllowSplit@Rave.hlp
+2 AlwaysGenerate property=AlwaysGenerate@Rave.hlp
+2 Anchor property=Anchor@Rave.hlp
+2 AutoSize property=AutoSize@Rave.hlp
+2 BandStyle property=BandStyle@Rave.hlp
+2 BarCodeJustify property=BarCodeJustify@Rave.hlp
+2 BarCodeRotation property=BarCodeRotation@Rave.hlp
+2 BarHeight property=BarHeight@Rave.hlp
+2 BarTop property=BarTop@Rave.hlp
+2 BarWidth property=BarWidth@Rave.hlp
+2 Bin property=Bin@Rave.hlp
+2 BinCustom property=BinCustom@Rave.hlp
+2 BorderColor property=BorderColor@Rave.hlp
+2 BorderStyle property=BorderStyle@Rave.hlp
+2 BorderWidth property=BorderWidth@Rave.hlp
+2 BorderWidthType property=BorderWidthType@Rave.hlp
+2 Bottom property=Bottom@Rave.hlp
+2 CalcType property=CalcType@Rave.hlp
+2 CalcVar property=CalcVar@Rave.hlp
+2 Categories property=Categories@Rave.hlp
+2 Category property=Category@Rave.hlp
+2 Center property=Center@Rave.hlp
+2 CodePage property=CodePage@Rave.hlp
+2 Collate property=Collate@Rave.hlp
+2 Color property=Color@Rave.hlp
+2 Columns property=Columns@Rave.hlp
+2 ColumnSpacing property=ColumnSpacing@Rave.hlp
+2 ConnectionName property=ConnectionName@Rave.hlp
+2 ContainsRTF property=ContainsRTF@Rave.hlp
+2 Controller property=Controller@Rave.hlp
+2 ControllerBand property=ControllerBand@Rave.hlp
+2 Copies property=Copies@Rave.hlp
+2 CountBlanks property=CountBlanks@Rave.hlp
+2 CountNulls property=CountNulls@Rave.hlp
+2 CountValue property=CountValue@Rave.hlp
+2 Cursor property=Cursor@Rave.hlp
+2 DataField property=DataField@Rave.hlp
+2 DataView property=DataView@Rave.hlp
+2 Description property=Description@Rave.hlp
+2 DesignerHide property=DesignerHide@Rave.hlp
+2 DestParam property=DestParam@Rave.hlp
+2 DestPIVar property=DestPIVar@Rave.hlp
+2 DetailKey property=DetailKey@Rave.hlp
+2 DevLocked property=DevLocked@Rave.hlp
+2 DisplayFormat property=DisplayFormat@Rave.hlp
+2 DisplayOn property=DisplayOn@Rave.hlp
+2 DisplayType property=DisplayType@Rave.hlp
+2 Duplex property=Duplex@Rave.hlp
+2 ExpandParent property=ExpandParent@Rave.hlp
+2 Extended property=Extended@Rave.hlp
+2 FieldName property=FieldName@Rave.hlp
+2 FileLink property=FileLink@Rave.hlp
+2 FillColor property=FillColor@Rave.hlp
+2 FillStyle property=FillStyle@Rave.hlp
+2 FinishNewPage property=FinishNewPage@Rave.hlp
+2 FirstPage property=FirstPage@Rave.hlp
+2 Font property=Font@Rave.hlp
+2 FontJustify property=FontJustify@Rave.hlp
+2 FontMirror property=FontMirror@Rave.hlp
+2 FullName property=FullName@Rave.hlp
+2 GotoMode property=GotoMode@Rave.hlp
+2 GotoPage property=GotoPage@Rave.hlp
+2 GridLines property=GridLines@Rave.hlp
+2 GridSpacing property=GridSpacing@Rave.hlp
+2 GroupDataView property=GroupDataView@Rave.hlp
+2 GroupKey property=GroupKey@Rave.hlp
+2 Height property=Height@Rave.hlp
+2 HRadius property=HRadius@Rave.hlp
+2 Image property=Image@Rave.hlp
+2 InitCalcVar property=InitCalcVar@Rave.hlp
+2 InitDataField property=InitDataField@Rave.hlp
+2 InitDataView property=InitDataView@Rave.hlp
+2 Initializer property=Initializer@Rave.hlp
+2 InitToFirst property=InitToFirst@Rave.hlp
+2 InitValue property=InitValue@Rave.hlp
+2 KeepBodyTogether property=KeepBodyTogether@Rave.hlp
+2 KeepRowTogether property=KeepRowTogether@Rave.hlp
+2 Left property=Left@Rave.hlp
+2 LineStyle property=LineStyle@Rave.hlp
+2 LineWidth property=LineWidth@Rave.hlp
+2 LineWidthType property=LineWidthType@Rave.hlp
+2 Locked property=Locked@Rave.hlp
+2 LookupDataView property=LookupDataView@Rave.hlp
+2 LookupDisplay property=LookupDisplay@Rave.hlp
+2 LookupField property=LookupField@Rave.hlp
+2 LookupInvalid property=LookupInvalid@Rave.hlp
+2 MailMergeItems property=MailMergeItems@Rave.hlp
+2 MasterDataView property=MasterDataView@Rave.hlp
+2 MasterKey property=MasterKey@Rave.hlp
+2 MatchSide property=MatchSide@Rave.hlp
+2 MaxPages property=MaxPages@Rave.hlp
+2 MaxRows property=MaxRows@Rave.hlp
+2 MinHeightLeft property=MinHeightLeft@Rave.hlp
+2 Mirror property=Mirror@Rave.hlp
+2 Name property=Name@Rave.hlp
+2 NullText property=NullText@Rave.hlp
+2 Operator property=Operator@Rave.hlp
+2 Orientation property=Orientation@Rave.hlp
+2 OrphanRows property=OrphanRows@Rave.hlp
+2 PageHeight property=PageHeight@Rave.hlp
+2 PageList property=PageList@Rave.hlp
+2 PageWidth property=PageWidth@Rave.hlp
+2 PaperSize property=PaperSize@Rave.hlp
+2 Parameters property=Parameters@Rave.hlp
+2 PIVars property=PIVars@Rave.hlp
+2 PositionMode property=PositionMode@Rave.hlp
+2 PositionValue property=PositionValue@Rave.hlp
+2 PrintChecksum property=PrintChecksum@Rave.hlp
+2 Printer property=Printer@Rave.hlp
+2 PrintReadable property=PrintReadable@Rave.hlp
+2 PrintTop property=PrintTop@Rave.hlp
+2 ReprintLocs property=ReprintLocs@Rave.hlp
+2 Resolution property=Resolution@Rave.hlp
+2 ResultFunction property=ResultFunction@Rave.hlp
+2 Right property=Right@Rave.hlp
+2 Rotation property=Rotation@Rave.hlp
+2 RunningTotal property=RunningTotal@Rave.hlp
+2 Size property=Size@Rave.hlp
+2 SortKey property=SortKey@Rave.hlp
+2 Src1CalcVar property=Src1CalcVar@Rave.hlp
+2 Src1DataField property=Src1DataField@Rave.hlp
+2 Src1DataView property=Src1DataView@Rave.hlp
+2 Src1Function property=Src1Function@Rave.hlp
+2 Src1Value property=Src1Value@Rave.hlp
+2 StartNewPage property=StartNewPage@Rave.hlp
+2 Tag property=Tag@Rave.hlp
+2 Text property=Text@Rave.hlp
+2 TextFalse property=TextFalse@Rave.hlp
+2 TextJustify property=TextJustify@Rave.hlp
+2 TextTrue property=TextTrue@Rave.hlp
+2 Top property=Top@Rave.hlp
+2 Truncate property=Truncate@Rave.hlp
+2 Units property=Units@Rave.hlp
+2 UnitsFactor property=UnitsFactor@Rave.hlp
+2 UseCheckSum property=UseCheckSum@Rave.hlp
+2 Visible property=Visible@Rave.hlp
+2 VRadius property=VRadius@Rave.hlp
+2 WasteFit property=WasteFit@Rave.hlp
+2 WideFactor property=WideFactor@Rave.hlp
+2 WidowRows property=WidowRows@Rave.hlp
+2 Width property=Width@Rave.hlp
+1 Appendix
+2 Lessons
+3 Quick Start=Lesson_QuickStart@Rave.hlp
+3 CalcOp=Lesson_CalcOp@Rave.hlp
+3 Calculated Fields=Lesson_CalculatedFields@Rave.hlp
+3 Custom Data Connection=Lesson_CustomDataConnection@Rave.hlp
+3 Data Connections=Lesson_DataConnections@Rave.hlp
+3 Font Master=Lesson_FontMaster@Rave.hlp
+2 FAQ
+3 FAQ=FAQ@Rave.hlp
+3 Design - Footers=FAQFooters@Rave.hlp
+3 Design - Header on ALL pages=FAQHeaders@Rave.hlp
+3 Design - Page Numbers=FAQPageNumbers@Rave.hlp
+3 Error - Duplicate License=FAQDuplicateLicense@Rave.hlp
+3 Events - Getting & Setting Parameters=FAQGetSetParameters@Rave.hlp
+3 Events - Hiding Bands or Components=FAQHidingComponents@Rave.hlp
+3 Font - Dynamically Changing Fonts=FAQDynamicallyChangingFonts@Rave.hlp
+3 Font - Missing Text=FAQMissingText@Rave.hlp
+3 Font - Overlapping Words=FAQOverlappingWords@Rave.hlp
+3 Font - Unicode Support=FAQUnicodeSupport@Rave.hlp
+2 Format Codes
+3 Format Codes=FormatCodes@Rave.hlp
+3 Alphanumeric Items=AlphanumericCodes@Rave.hlp
+3 Date Time Items=DateTimeItems@Rave.hlp
+1 Shortcuts=Shortcuts@Rave.hlp
+2 Variables=Variables@Rave.hlp
