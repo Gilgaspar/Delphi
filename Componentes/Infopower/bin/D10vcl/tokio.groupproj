@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BE7A6AF6-F6F5-4EFB-8952-A92A735896A7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ipstudiowin.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dipstudiowin.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ipstudiowin">
+        <MSBuild Projects="ipstudiowin.dproj"/>
+    </Target>
+    <Target Name="ipstudiowin:Clean">
+        <MSBuild Projects="ipstudiowin.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ipstudiowin:Make">
+        <MSBuild Projects="ipstudiowin.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dipstudiowin">
+        <MSBuild Projects="dipstudiowin.dproj"/>
+    </Target>
+    <Target Name="dipstudiowin:Clean">
+        <MSBuild Projects="dipstudiowin.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dipstudiowin:Make">
+        <MSBuild Projects="dipstudiowin.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ipstudiowin;dipstudiowin"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ipstudiowin:Clean;dipstudiowin:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ipstudiowin:Make;dipstudiowin:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,366 @@
+object wwFilterDlg: TwwFilterDlg
+  Left = 0
+  Top = 0
+  Caption = 'Search Fields'
+  ClientHeight = 325
+  ClientWidth = 584
+  Position = poScreenCenter
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [dkDesktop]
+  OnActivate = FormActivate
+  OnCloseQuery = FormCloseQuery
+  OnKeyDown = FormKeyDown
+  OnResize = FormResize
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object SortFieldsGroupBox: TGroupBox
+    Anchors = [akLeft, akBottom]
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 49.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 274.000000000000000000
+    Text = 'Sort Fields'
+    Width = 225.000000000000000000
+    TabOrder = 0
+    object SortFieldsAlphabeticallyButton: TRadioButton
+      GroupName = 'SortFieldsGroupName'
+      Height = 19.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 22.000000000000000000
+      TabOrder = 0
+      Text = 'Alphabetically'
+      Width = 113.000000000000000000
+      OnChange = SortFieldsAlphabeticallyButtonChange
+    end
+    object SortFieldsNaturallyButton: TRadioButton
+      GroupName = 'SortFieldsGroupName'
+      Height = 19.000000000000000000
+      Position.X = 113.000000000000000000
+      Position.Y = 22.000000000000000000
+      TabOrder = 1
+      Text = 'Logically'
+      Width = 88.000000000000000000
+    end
+  end
+  object FilterByTab: TTabControl
+    Anchors = [akLeft, akTop, akBottom]
+    Height = 258.000000000000000000
+    Position.X = 241.000000000000000000
+    Position.Y = 12.000000000000000000
+    TabHeight = 20.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    Width = 233.000000000000000000
+    object TabItemFilterbyValue: TTabItem
+      WordWrap = False
+      Height = 20.000000000000000000
+      IsSelected = True
+      Position.X = 1.000000000000000000
+      TabOrder = 0
+      Text = 'Filter By Value'
+      Width = 89.000000000000000000
+      object FilterValueEdit: TwwEdit
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 0
+        Position.X = 10.000000000000000000
+        Position.Y = 22.000000000000000000
+        Width = 160.000000000000000000
+        Height = 22.000000000000000000
+        OnChangeTracking = ValueEditChange
+      end
+      object FilterValueClearButton: TButton
+        Anchors = [akTop, akRight]
+        Enabled = False
+        Height = 22.000000000000000000
+        Position.X = 176.000000000000000000
+        Position.Y = 22.000000000000000000
+        TabOrder = 1
+        Text = 'Clear'
+        Width = 48.000000000000000000
+        OnClick = FilterValueClearButtonClick
+      end
+      object MatchTypeGroup: TGroupBox
+        Anchors = [akLeft, akTop, akRight]
+        StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+        Height = 99.000000000000000000
+        Position.X = 7.000000000000000000
+        Position.Y = 44.000000000000000000
+        Text = 'Search Type'
+        Width = 218.000000000000000000
+        TabOrder = 2
+        object ExactMatch: TRadioButton
+          Height = 19.000000000000000000
+          Position.X = 13.000000000000000000
+          Position.Y = 22.000000000000000000
+          TabOrder = 0
+          Text = 'Exact Match'
+          Width = 120.000000000000000000
+        end
+        object PartialMatchBeginning: TRadioButton
+          Height = 19.000000000000000000
+          Position.X = 13.000000000000000000
+          Position.Y = 41.000000000000000000
+          TabOrder = 1
+          Text = 'Partial Match at Beginning'
+          Width = 176.000000000000000000
+        end
+        object PartialMatchAnywhere: TRadioButton
+          Height = 19.000000000000000000
+          Position.X = 13.000000000000000000
+          Position.Y = 60.000000000000000000
+          TabOrder = 2
+          Text = 'Partial Match Anywhere'
+          Width = 176.000000000000000000
+        end
+      end
+      object SearchOptionsGroupBox: TGroupBox
+        Anchors = [akLeft, akTop, akRight]
+        StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+        Height = 67.000000000000000000
+        Position.X = 7.000000000000000000
+        Position.Y = 131.000000000000000000
+        Width = 218.000000000000000000
+        TabOrder = 3
+        object CaseSensitive: TCheckBox
+          Height = 19.000000000000000000
+          Position.X = 13.000000000000000000
+          Position.Y = 16.000000000000000000
+          TabOrder = 0
+          Text = 'Case Sensitive'
+          Width = 120.000000000000000000
+        end
+        object NonMatching: TCheckBox
+          Height = 19.000000000000000000
+          Position.X = 13.000000000000000000
+          Position.Y = 37.000000000000000000
+          TabOrder = 1
+          Text = 'Non-matching records'
+          Width = 169.000000000000000000
+        end
+      end
+      object FieldValueLbl: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 5.000000000000000000
+        Text = 'Field Value'
+        Width = 57.000000000000000000
+        WordWrap = False
+      end
+      object FilterValueCombo: TComboBox
+        DisableFocusEffect = False
+        Height = 22.000000000000000000
+        ListBoxResource = 'transparentlistboxstyle'
+        Position.X = 15.000000000000000000
+        Position.Y = 199.000000000000000000
+        TabOrder = 5
+        Width = 153.000000000000000000
+      end
+    end
+    object TabItemFilterByRange: TTabItem
+      WordWrap = False
+      Height = 20.000000000000000000
+      IsSelected = False
+      Position.X = 90.000000000000000000
+      TabOrder = 1
+      Text = 'Filter By Range'
+      Width = 92.000000000000000000
+      object MaxDateEdit: TwwCalendarEdit
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 3
+        Cursor = crIBeam
+        KeyboardType = vktNumbersAndPunctuation
+        Text = '4/9/2012'
+        Epoch = 0
+        Date = 41008.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 70.000000000000000000
+        Width = 160.000000000000000000
+        Height = 22.000000000000000000
+        Visible = False
+      end
+      object MaxValueEdit: TwwEdit
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 7
+        Position.X = 10.000000000000000000
+        Position.Y = 70.000000000000000000
+        Width = 160.000000000000000000
+        Height = 22.000000000000000000
+        Visible = False
+        OnChangeTracking = ValueEditChange
+      end
+      object MinDateEdit: TwwCalendarEdit
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 2
+        Cursor = crIBeam
+        KeyboardType = vktNumbersAndPunctuation
+        Text = '4/9/2012'
+        Epoch = 0
+        Date = 41008.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 22.000000000000000000
+        Width = 160.000000000000000000
+        Height = 22.000000000000000000
+        Visible = False
+      end
+      object MinValueEdit: TwwEdit
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 1
+        Position.X = 10.000000000000000000
+        Position.Y = 22.000000000000000000
+        Width = 160.000000000000000000
+        Height = 22.000000000000000000
+        Visible = False
+        OnChangeTracking = ValueEditChange
+        OnKeyDown = MinValueEditKeyDown
+      end
+      object MinValueClearButton: TButton
+        Anchors = [akTop, akRight]
+        CanFocus = False
+        Enabled = False
+        Height = 22.000000000000000000
+        Position.X = 176.000000000000000000
+        Position.Y = 22.000000000000000000
+        TabOrder = 4
+        Text = 'Clear'
+        Width = 48.000000000000000000
+      end
+      object StartingRangeLbl: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 5.000000000000000000
+        Text = 'Starting Range'
+        Width = 76.000000000000000000
+        WordWrap = False
+      end
+      object EndingRangeLbl: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 52.000000000000000000
+        Text = 'Ending Range'
+        Width = 71.000000000000000000
+        WordWrap = False
+      end
+      object MaxValueClearButton: TButton
+        Anchors = [akTop, akRight]
+        CanFocus = False
+        Enabled = False
+        Height = 22.000000000000000000
+        Position.X = 176.000000000000000000
+        Position.Y = 69.000000000000000000
+        TabOrder = 5
+        Text = 'Clear'
+        Width = 48.000000000000000000
+      end
+    end
+  end
+  object FieldTabSet: TTabControl
+    Anchors = [akLeft, akTop, akBottom]
+    Height = 262.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    StyleLookup = 'TabControl1Style1'
+    TabHeight = 20.000000000000000000
+    TabIndex = 0
+    TabOrder = 2
+    Width = 225.000000000000000000
+    OnChange = FieldTabSetChange
+    object TabItemAllFields: TTabItem
+      WordWrap = False
+      Height = 20.000000000000000000
+      IsSelected = True
+      Position.X = 1.000000000000000000
+      TabOrder = 0
+      Text = 'All Fields'
+      Width = 63.000000000000000000
+      object FieldsListBox: TListBox
+        Align = alClient
+        Anchors = [akLeft, akTop, akRight]
+        Height = 242.000000000000000000
+        TabOrder = 0
+        Width = 225.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnChange = FieldsListBoxChange
+        Left = 2
+        Top = 1
+      end
+    end
+    object TabItemSearchedFields: TTabItem
+      WordWrap = False
+      Height = 20.000000000000000000
+      IsSelected = False
+      Position.X = 64.000000000000000000
+      TabOrder = 1
+      Text = 'Searched Fields'
+      Width = 95.000000000000000000
+      object FilteredFieldsListBox: TListBox
+        Align = alClient
+        Height = 242.000000000000000000
+        TabOrder = 0
+        Width = 225.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnChange = FieldsListBoxChange
+        Left = 2
+        Top = 1
+      end
+    end
+  end
+  object ViewButton: TButton
+    Anchors = [akLeft, akBottom]
+    Height = 22.000000000000000000
+    Position.X = 252.000000000000000000
+    Position.Y = 288.000000000000000000
+    TabOrder = 3
+    Text = 'View Summary'
+    Width = 96.000000000000000000
+    OnClick = ViewButtonClick
+  end
+  object ClearSearchButton: TButton
+    Anchors = [akLeft, akBottom]
+    Height = 22.000000000000000000
+    Position.X = 361.000000000000000000
+    Position.Y = 288.000000000000000000
+    TabOrder = 4
+    Text = 'New Search'
+    Width = 102.000000000000000000
+    OnClick = ClearSearchButtonClick
+  end
+  object OKCancelPanel: TLayout
+    Anchors = [akTop, akRight]
+    Height = 239.000000000000000000
+    Position.X = 480.000000000000000000
+    Position.Y = 32.000000000000000000
+    Width = 97.000000000000000000
+    object OkBtn: TButton
+      Anchors = []
+      Default = True
+      Height = 22.000000000000000000
+      ModalResult = 1
+      Position.X = 8.070796966552734000
+      Position.Y = 11.809127807617190000
+      TabOrder = 0
+      Text = 'OK'
+      Width = 80.000000000000000000
+    end
+    object CancelBtn: TButton
+      Anchors = []
+      Height = 22.000000000000000000
+      ModalResult = 2
+      Position.X = 8.070796966552734000
+      Position.Y = 46.518676757812500000
+      TabOrder = 1
+      Text = 'Cancel'
+      Width = 80.000000000000000000
+    end
+  end
+end
