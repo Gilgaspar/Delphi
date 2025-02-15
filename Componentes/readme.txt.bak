@@ -1,0 +1,13 @@
+descompactar este conteudo em c:\delphi\componentes
+instalar os componentes nessa ordem
+1 - JEDI  -> instalador
+2 - ACBR  -> instalador
+3 - DEVEXPRESS  -> instalador
+4 - INFOPOWER
+5 - QUICKREPORT
+6 - RAVEREPORT
+7 - CONTROLE DE DADOS
+8 - FASTREPORTS => SE NÃO ESTIVER INSTALADO DO DELPHI
+
+Não esquecer de adicionar o caminho dos fontes dos componentes
+no PATH da LIBRARY
