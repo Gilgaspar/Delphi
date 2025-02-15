@@ -1,0 +1,65 @@
+package ControledeDado;
+
+{$R *.res}
+{$R 'MultStringGrid.dcr'}
+{$R 'NumEdit.dcr'}
+{$R 'MoedaEdit.dcr'}
+{$R 'BotaoNumEdit.dcr'}
+{$R 'DataEdit.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Controle de Dados'}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl,
+  vcldb,
+  rtl,
+  dbrtl,
+  dsnap,
+  dbexpress,
+  dbxcds,
+  VclSmp,
+  dxCoreRS25,
+  cxLibraryRS25,
+  dxGDIPlusRS25,
+  FireDAC,
+  FireDACCommonDriver,
+  FireDACCommon;
+
+contains
+  MultStringGrid in 'MultStringGrid.pas',
+  NumEdit in 'NumEdit.pas',
+  MoedaEdit in 'MoedaEdit.pas',
+  BotaoNumEdit in 'BotaoNumEdit.pas',
+  DataEdit in 'DataEdit.pas',
+  MesagemBalao in 'MesagemBalao.pas',
+  EditUpDn in 'EditUpDn.pas',
+  BuscaRapida in 'BuscaRapida.pas',
+  cdDateEdit in 'cdDateEdit.pas',
+  AgrupamentoBox in 'AgrupamentoBox.pas',
+  HyperLink in 'HyperLink.pas';
+
+end.
